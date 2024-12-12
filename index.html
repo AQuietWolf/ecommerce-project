@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for tHeQuiEtWoLf">
+    <title>Home</title>
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar starts here  -->
+
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+     <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-list"><a class="nav-link" href="register.html">Register</a></li>
+            <li class="nav-list"><a class="nav-link" href="login.html">LogIn</a></li>
+            <li class="nav-list"><a class="nav-link" href="index.html">LogOut</a></li>
+            <li class="nav-list"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-list"><a class="nav-link" href="profile.html"><img class="profile-icon" src="wolf.png" alt=""></a></li>
+        </ul>
+
+        <ul class="nav-lower flex-space-around">
+            <li class="nav-list"><a href="index.html" class="nav-link nav-brand">wolfpack</a></li>
+            <li class="nav-list"><a href="cart.html" class="nav-link"><span><i class="fa-solid fa-cart-shopping"></i></span>cart 2 products - $100</a></li>
+        </ul>
+     </nav>
+    <!-- navbar ends here  -->
+
+    <!-- header starts here  -->
+     <header>
+        <div class="banner flex-space-around">
+            <marquee class="banner-title" behavior="" direction="">50% sales going on</marquee>
+            <div class="features flex-space-around">
+                <div class="feature">
+                    <i class="fa-solid fa-truck feature-icon"></i>
+                    <h3>Shipping within 7 days</h3>
+                </div>
+                <div class="feature">
+                    <i class="fa-brands fa-rocketchat feature-icon"></i>
+                    <h3>Support 24/7</h3>
+                </div>
+                <div class="feature">
+                    <i class="fa-regular fa-credit-card feature-icon"></i>
+                    <h3>Safe Payment</h3>
+                </div>
+            </div>
+        </div>
+     </header>
+     <!-- header ends here  -->
+
+
+     <main>
+        <div class="sidebar">
+            <div class="categories">
+                <h2>categories</h2>
+                <ul class="categories-ul-list">
+                    <li class="list-item">
+                       <label for="phone">
+                        <input type="checkbox" name="phone" id="phone" value="phone">
+                        Telephone
+                       </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="tablets">
+                         <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                         Tablets
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="television">
+                         <input type="checkbox" name="television" id="television" value="television">
+                         television
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="computer">
+                         <input type="checkbox" name="computer" id="computer" value="computer">
+                         computer
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="headphone">
+                         <input type="checkbox" name="headphone" id="headphone" value="headphone">
+                         headphone
+                        </label>
+                     </li>
+                </ul>
+            </div>
+            <div class="price-range">
+                <h2>Price range</h2>
+                <ul class="price-range-ul-list">
+                    <li class="list-item">
+                       <label for="price1">
+                        <input type="radio" name="price1" id="price1" value="[0,20]">
+                        $0-$20
+                       </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="price2">
+                         <input type="radio" name="price2" id="price2" value="[21.50]">
+                         $21-$50
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="price3">
+                         <input type="radio" name="price3" id="price3" value="[51,100]">
+                         $51-$100
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="price4">
+                         <input type="radio" name="price4" id="price4" value="[101,300]">
+                         $101-$300
+                        </label>
+                     </li>
+                     <li class="list-item">
+                        <label for="price5">
+                         <input type="radio" name="price5" id="price5" value="[300+]">
+                         $300+
+                        </label>
+                     </li>
+                </ul>
+            </div>
+            <div class="shipping-options">
+                <h2>shipping options</h2>
+                <ul class="categories-ul-list">
+                    <li class="list-item">
+                       <label for="free-shipping">
+                        <input type="radio" name="free-shipping" id="free-shipping" value="free-shipping">
+                        free-shipping
+                       </label>
+                    </li>
+                    <li class="list-item">
+                        <label for="paid-shipping">
+                         <input type="radio" name="paid-shipping" id="paid-shipping" value="paid-shipping">
+                         paid-shipping
+                        </label>
+                     </li>
+                        
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sorting-searching">
+                <div class="sorting">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">most sold first</option>
+                        <option value="rating">most rated first</option>
+                        <option value="price">cheapest first</option>
+                        <option value="arrival">most recent</option>
+                        <option value="discount">most discount first</option>
+                    </select>
+                </div>
+                <div class="searching">
+                    <input type="text" placeholder="Search product">
+                    <button>
+                        <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product-image" src="headphone.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">Headphone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product1.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$200</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product card">
+                    <div class="badge">
+                        <span>15 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product-image" src="laptop.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">Laptop</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product2.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$2000</h4>
+                        <p class="product-rating">Rating: 3.5/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product card">
+                    <div class="badge">
+                        <span>11 in stock</span>
+                        <hr class="hr-design">
+                        <span>4 sold</span>
+                    </div>
+                    <img class="product-image" src="tablet.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">Tablet</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product3.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$1000</h4>
+                        <p class="product-rating">Rating: 4/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product card">
+                    <div class="badge">
+                        <span>21 in stock</span>
+                        <hr class="hr-design">
+                        <span>13 sold</span>
+                    </div>
+                    <img class="product-image" src="tv.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">TV</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product4.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$100</h4>
+                        <p class="product-rating">Rating: 2.5/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product card">
+                    <div class="badge">
+                        <span>19 in stock</span>
+                        <hr class="hr-design">
+                        <span>9 sold</span>
+                    </div>
+                    <img class="product-image" src="phone.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">Phone</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product5.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$200</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product card">
+                    <div class="badge">
+                        <span>6 in stock</span>
+                        <hr class="hr-design">
+                        <span>1 sold</span>
+                    </div>
+                    <img class="product-image" src="desktop.jpg" alt="headphone">
+                    <div class="product-body">
+                        <h3 class="product-name">Desktop</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <p class="product-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, architecto. Veritatis iure ducimus ex, facere architecto non vero inventore voluptates!
+                            <a href="product6.html" class="know-more">know more</a>
+                        </p>
+                        <h4 class="product-price">$1200</h4>
+                        <p class="product-rating">Rating: 4.5/5</p>
+                        <button class="btn">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="btn pagination-btn">
+                    <i class="fas fa-less-than"></i>
+                </button>
+                <button class="btn pagination-btn">1</button>
+                <button class="btn pagination-btn">2</button>
+                <button class="btn pagination-btn">3</button>
+                <button class="btn pagination-btn">4</button>
+                <button class="btn pagination-btn">5</button>
+                <button class="btn pagination-btn">6</button>
+                <button class="btn pagination-btn">7</button>
+                <button class="btn pagination-btn">8</button>
+                <button class="btn pagination-btn">9</button>
+                <button class="btn pagination-btn">10</button>
+                <button class="btn pagination-btn">...</button>
+                <button class="btn pagination-btn">50</button>
+                <button class="btn pagination-btn">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+        </div>
+     </main>
+
+
+    <!-- footer starts here  -->
+     <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" required name="subscribe" class="footer-input" placeholder="Your Email-address">
+            <button class="btn subscribe-btn">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; created by tHeQuiEtWoLf</p>
+        </div>
+     </footer>
+    <!-- footer ends here  -->
+     <script src="scripts.js"></script>
+</body>
+</html>
